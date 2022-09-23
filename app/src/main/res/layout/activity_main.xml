@@ -13,14 +13,15 @@
         android:text="+"
         android:textSize="30sp"
         android:layout_above="@id/szam"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:id="@+id/plusz"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:layout_centerInParent="true"
-        android:textColor="@color/white"
+        android:textColor="#021EAC"
         android:id="@+id/szam"
         android:textSize="30sp"/>
     <Button

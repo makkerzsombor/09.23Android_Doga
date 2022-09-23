@@ -34,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 szamlalo ++;
                 String pluszEgy = String.format("%s",szamlalo);
                 szam.setText(pluszEgy);
-                if (szamlalo > 0){
+                if (szamlalo == 0){
+                    szam.setTextColor(Color.BLUE);
+                }else if (szamlalo > 0){
                     szam.setTextColor(Color.GREEN);
                 }
             }
@@ -45,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 szamlalo --;
                 String minuszEgy = String.format("%s",szamlalo);
                 szam.setText(minuszEgy);
-                if (szamlalo < 0){
+                if (szamlalo==0){
+                    szam.setTextColor(Color.BLUE);
+                }else if (szamlalo < 0){
                     szam.setTextColor(Color.RED);
                 }
 
